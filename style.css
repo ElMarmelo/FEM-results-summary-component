@@ -1,0 +1,80 @@
+
+
+:root {
+    /* Primary */
+    --light-red: hsl(0, 100%, 67%);
+    --oreangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234,85%, 45%);
+
+    /* Gradients */
+    --light-slate-blue-bg: hsl(252, 100%, 67%);
+    --light-royal-blue-bg: hsl(241,81%,54%);
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241,72%,46%, 0);
+
+    /* Neutral */
+    --white: hsl(0,0%,100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224,30%,27%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+main {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+.report-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, var(--persian-blue-circle), var(--dark-gray-blue));
+  color: var(--white);
+  text-align: center;
+}
+
+.card-header h1{
+  font-size: 18px;
+  color: var(--pale-blue);
+  font-weight: 400;
+}
+
+.card-score {
+  background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  padding: 2rem 3rem;
+}
+
+.card-score h2 {
+  font-size: 36;
+
+}
